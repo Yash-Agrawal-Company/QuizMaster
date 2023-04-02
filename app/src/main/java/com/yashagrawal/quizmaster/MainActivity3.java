@@ -65,15 +65,15 @@ public class MainActivity3 extends AppCompatActivity {
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("Users");
 
-                String fname = fullName.getEditText().getText().toString();
-                String uname = userName.getEditText().getText().toString();
-                String emailid = email.getEditText().getText().toString();
-                String phone = contactNumber.getEditText().getText().toString();
-                String pass = password.getEditText().getText().toString();
+                String Full_Name = fullName.getEditText().getText().toString();
+                String User_Name = userName.getEditText().getText().toString();
+                String Email_id = email.getEditText().getText().toString();
+                String Phone_no = contactNumber.getEditText().getText().toString();
+                String Password = password.getEditText().getText().toString();
 
-                UserHelperClass helperClass = new UserHelperClass(fname,uname,emailid,phone,pass);
-                reference.child(uname).setValue(helperClass);
-                Toast.makeText(MainActivity3.this, "Your account has been created successfully", Toast.LENGTH_SHORT).show();
+                UserHelperClass helperClass = new UserHelperClass(Full_Name,User_Name,Email_id,Phone_no,Password);
+                reference.child(User_Name).setValue(helperClass);
+                Toast.makeText(MainActivity3.this, "Your account has been created successfully\nKindly go back to the sign page to continue", Toast.LENGTH_SHORT).show();
 
             }
         });

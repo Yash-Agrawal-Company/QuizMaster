@@ -43,7 +43,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id = "@+id/username"
+            android:id = "@+id/user"
             android:textColorHint="#FEA924"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
@@ -57,7 +57,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id = "@+id/password"
+            android:id = "@+id/pass"
             app:passwordToggleEnabled = "true"
             android:layout_marginTop="5dp"
             android:textColorHint="#FEA924"

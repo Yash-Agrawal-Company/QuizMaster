@@ -1,53 +1,54 @@
 package com.yashagrawal.quizmaster;
 
 public class UserHelperClass {
-    String fname,uname,emailid,phone,pass;
+    String Full_Name, User_Name, Email_id, Phone_no, Password;
 
-    public UserHelperClass(String fname, String uname, String emailid, String phone, String pass) {
-        this.fname = fname;
-        this.uname = uname;
-        this.emailid = emailid;
-        this.phone = phone;
-        this.pass = pass;
+    public String getFull_Name() {
+        return Full_Name;
     }
 
-    public String getFname() {
-        return fname;
+    public void setFull_Name(String full_Name) {
+        Full_Name = full_Name;
     }
 
-    public void setFname(String fname) {
-        this.fname = fname;
+    public String getUser_Name() {
+        return User_Name;
     }
 
-    public String getUname() {
-        return uname;
+    public void setUser_Name(String user_Name) {
+        User_Name = user_Name;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public String getEmail_id() {
+        return Email_id;
     }
 
-    public String getEmailid() {
-        return emailid;
+    public void setEmail_id(String email_id) {
+        Email_id = email_id;
     }
 
-    public void setEmailid(String emailid) {
-        this.emailid = emailid;
+    public String getPhone_no() {
+        return Phone_no;
     }
 
-    public String getPhone() {
-        return phone;
+    public void setPhone_no(String phone_no) {
+        Phone_no = phone_no;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public String getPassword() {
+        return Password;
     }
 
-    public String getPass() {
-        return pass;
+    public void setPassword(String password) {
+        Password = password;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public UserHelperClass(String full_Name, String user_Name, String email_id, String phone_no, String password) {
+        Full_Name = full_Name;
+        User_Name = user_Name;
+        Email_id = email_id;
+        Phone_no = phone_no;
+        Password = password;
+
     }
 }
